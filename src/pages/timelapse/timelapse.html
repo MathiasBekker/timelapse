@@ -6,6 +6,8 @@
 </ion-header>
 <ion-content fullscreen class="background-gradient" padding>
 
+  <ngx-cs-slider (update)="handleSliderChange($event)" [props]="{}" [startAngle]="0" [angleLength]="3"></ngx-cs-slider>
+
   <ion-row class="specs" text-center>
     <ion-col>Rec Time</ion-col>
     <ion-col>Play Time</ion-col>
@@ -36,5 +38,4 @@
       <ion-icon name="camera"></ion-icon>
     </button>
   </ion-fab>
-
 </ion-content>

@@ -9,6 +9,7 @@ import { NgxCircularSliderModule } from 'ngx-circular-slider';
   ],
   imports: [
     IonicPageModule.forChild(TimelapsePage),
+    NgxCircularSliderModule,
   ],
 })
 export class TimelapsePageModule {}

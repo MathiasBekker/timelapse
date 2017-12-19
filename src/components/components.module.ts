@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
-import { NumberpickerComponent } from './numberpicker/numberpicker';
 @NgModule({
-	declarations: [NumberpickerComponent],
+	declarations: [],
 	imports: [],
-	exports: [NumberpickerComponent]
+	exports: []
 })
 export class ComponentsModule {}

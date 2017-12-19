@@ -10,6 +10,8 @@ import { VideoPage } from '../pages/video/video';
 import { TimelapsePage } from '../pages/timelapse/timelapse';
 import { PanoramaPage } from '../pages/panorama/panorama';
 
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -17,10 +19,12 @@ import { PanoramaPage } from '../pages/panorama/panorama';
     VideoPage,
     PanoramaPage,
     TimelapsePage,
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
