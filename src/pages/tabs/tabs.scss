@@ -1,8 +1,10 @@
+$ACTIVE: rgb(255, 106, 0);
+
 .tabs-md .tab-button[aria-selected=true]{
-    color: rgb(235, 100, 0);
+    color: $ACTIVE;
 }
 .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
-    color: rgb(235, 100, 0);
+    color: $ACTIVE;
 }
 .tabs-md .tab-button[aria-selected=false]{
     color: rgb(218, 218, 218);
@@ -11,7 +13,6 @@
 .tabs-md .tab-button[aria-selected=false] .tab-button-icon{
     color: rgb(218, 218, 255);
 }
-
 
 .tabs-md .tab-button{
     background-color: rgb(61, 61, 61);

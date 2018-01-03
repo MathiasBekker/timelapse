@@ -7,8 +7,22 @@
     color: white;
 }
 
+$ACTIVE: rgb(255, 106, 0);
 
-$BACKGROUNDTOP: rgb(87, 87, 87);
+.fab-md-light .button-effect{
+    background-color: $ACTIVE;
+}
+
+element.style {
+    transform: translate3d(-14px, -14px, 0px) scale(1);
+    height: 96px;
+    width: 96px;
+    opacity: 0;
+    transition: transform 500ms, opacity 300ms 150ms;
+}
+
+
+$BACKGROUNDTOP: rgb(95, 95, 95);
 $BACKGROUNDBOTTOM: rgb(16, 16, 16);
 $ANGLE: 120deg;
 

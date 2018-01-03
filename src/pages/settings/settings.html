@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar transparent>
+    <ion-title class="title">SETTINGS</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content fullscreen class="background-gradient" padding>
+
+<ion-list no-lines>
+  <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}
+  </button> 
+</ion-list>
+
+</ion-content>

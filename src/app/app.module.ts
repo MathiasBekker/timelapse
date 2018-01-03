@@ -9,8 +9,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { VideoPage } from '../pages/video/video';
 import { TimelapsePage } from '../pages/timelapse/timelapse';
 import { PanoramaPage } from '../pages/panorama/panorama';
+import { SettingsPage } from '../pages/settings/settings';
 
-
+import { NgxCircularSliderModule } from 'ngx-circular-slider';
+import { BLE } from '@ionic-native/ble';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { PanoramaPage } from '../pages/panorama/panorama';
     VideoPage,
     PanoramaPage,
     TimelapsePage,
-    
+    SettingsPage,
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    NgxCircularSliderModule,
 
   ],
   bootstrap: [IonicApp],
@@ -32,9 +36,11 @@ import { PanoramaPage } from '../pages/panorama/panorama';
     TabsPage,
     VideoPage,
     TimelapsePage,
-    PanoramaPage
+    PanoramaPage,
+    SettingsPage,
   ],
   providers: [
+    BLE,
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
